@@ -12,6 +12,7 @@ html {
 }
 
 body {
+    position: relative;
     font-family: 'Press Start 2P', sans-serif;
     color: #eee;
     background-color: #009688;
@@ -25,7 +26,7 @@ header {
     border-bottom: 7px solid #eee;
 }
 
-main {
+section {
     height: 65vh;
     color: #eee;
     display: flex;
@@ -117,8 +118,22 @@ button:hover {
     margin-bottom: 2rem;
 }
 
+footer {
+    text-align: left;
+    padding: 0.3rem 2rem;
+    color: #fff;
+    background-color: #000;
+    position: absolute;
+    inset: auto 0 0 0;
+}
+
+footer a {
+    font-size: medium;
+    color: #fff;
+}
+
 @media only screen and (max-width: 600px) {
-    main {
+    section {
         display: block;
         padding: 8rem 2rem;
         text-align: center;
@@ -137,5 +152,9 @@ button:hover {
 
     .message {
         margin-bottom: 4rem;
+    }
+
+    footer {
+        padding: 0;
     }
 }
